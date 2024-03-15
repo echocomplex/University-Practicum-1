@@ -55,11 +55,32 @@ long long ArrayParsing::sumAfterNegative () {
 
 void ArrayParsing::printDeveloper() {
     std::cout << "This code was writen by echo complex, Exercise 10" << std::endl <<
-    "GitHub: https://github.com/echocomplex/University-Practicum-1" << std::endl;
+    "GitHub: https://github.com/echocomplex/University-Practicum-1" << std::endl << std::endl;
 }
 
 void ArrayParsing::printArray() {
     for (int i = 0; i < this->len; i++) {
         std::cout << this->arr[i] << " ";
     }
+    std::cout << std::endl;
+}
+
+void negativeSort(const ArrayParsing &unit) {
+    for (int i = 0; i < unit.len - 1; i++) {
+        int smallestPosition = i;
+        for (int a = i + 1; a < unit.len; a++) {
+            if (unit.arr[a] < unit.arr[smallestPosition]) {
+                smallestPosition = a;
+            }
+        }
+        std::swap(unit.arr[i], unit.arr[smallestPosition]);
+    }
+}
+
+long long* ArrayParsing::returnArray () {
+    return this->arr;
+}
+
+int ArrayParsing::returnLength () {
+    return this->len;
 }

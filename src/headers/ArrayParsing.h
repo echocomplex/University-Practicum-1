@@ -20,20 +20,11 @@ public:
     void printArray ();
     long long minABS();
     long long sumAfterNegative();
+    long long* returnArray ();
+    int returnLength ();
     friend void negativeSort (const ArrayParsing &unit);
 };
 
-void negativeSort (const ArrayParsing &unit) {
-    for (int i = 0; i < unit.len - 1; i++) {
-        int smallestPosition = i;
-
-        for (int a = i + 1; a < unit.len; a++) {
-            if (unit.arr[i] > unit.arr[smallestPosition]) {
-                smallestPosition = a;
-            }
-        }
-        std::swap(unit.arr[i], unit.arr[smallestPosition]);
-    }
-}
+void negativeSort (const ArrayParsing &unit);
 
 #endif //UNIVERSITY_PRACTICUM_1_ARRAYPARSING_H
