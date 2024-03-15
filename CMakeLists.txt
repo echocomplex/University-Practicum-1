@@ -1,0 +1,11 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.28.3 FATAL_ERROR)
+
+PROJECT(University-Practicum-1)
+
+SET(CMAKE_CXX_STANDARD 23)
+SET(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+ADD_EXECUTABLE(
+        Launch src/main.cpp
+        src/ArrayParsing.h
+)
