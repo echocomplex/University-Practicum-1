@@ -54,7 +54,7 @@ long long ArrayParsing::sumAfterNegative () {
 }
 
 void ArrayParsing::printDeveloper() {
-    std::cout << "This code was writen by Ivanov A. A. (BBBO-07-23), Exercise 10" << std::endl <<
+    std::cout << "This code was writen by echo complex, Exercise 10" << std::endl <<
     "GitHub: https://github.com/echocomplex/University-Practicum-1" << std::endl;
 }
 
