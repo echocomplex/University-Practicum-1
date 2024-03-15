@@ -1,2 +1,2 @@
 # University-Practicum-1
-University C++ Exercise 
+## You need to write a program to process a dynamic array using C++ class
