@@ -5,7 +5,9 @@ PROJECT(University-Practicum-1)
 SET(CMAKE_CXX_STANDARD 23)
 SET(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+INCLUDE_DIRECTORIES(src/headers)
+
 ADD_EXECUTABLE(
-        Launch src/main.cpp
-        src/ArrayParsing.h
+        Launch src/cpp/main.cpp
+        src/cpp/ArrayParsing.cpp
 )
